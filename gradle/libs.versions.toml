@@ -14,6 +14,7 @@ googleid = "1.1.1"
 retrofit = "2.11.0"
 okhttp = "4.12.0"
 gson = "2.11.0"
+playServicesCastFramework = "22.3.1"
 
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
@@ -39,6 +40,7 @@ okhttp-bom = { group = "com.squareup.okhttp3", name = "okhttp-bom", version.ref 
 okhttp = { group = "com.squareup.okhttp3", name = "okhttp" }
 okhttp-logging = { group = "com.squareup.okhttp3", name = "logging-interceptor" }
 gson = { group = "com.google.code.gson", name = "gson", version.ref = "gson" }
+play-services-cast-framework = { group = "com.google.android.gms", name = "play-services-cast-framework", version.ref = "playServicesCastFramework" }
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }
