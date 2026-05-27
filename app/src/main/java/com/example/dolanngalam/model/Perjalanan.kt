@@ -1,0 +1,17 @@
+package com.example.dolanngalam.model
+
+import android.os.Parcelable
+import kotlinx.parcelize.Parcelize
+
+@Parcelize
+data class Perjalanan(
+    val id: String = "",
+    val namaPerjalanan: String = "",
+    val tanggalBerangkat: String = "",
+    val tanggalSelesai: String = "",
+    val idPengguna: String = "",
+    val tipePerjalanan: String = "",
+    val daftarPerjalanan: List<tempatPerjalanan> = emptyList(),
+    val jamMulai: String = "",
+    val jamSelesai: String = ""
+) : Parcelable
