@@ -1,4 +1,4 @@
-package com.example.localngalam.presentation.home
+package com.example.dolanngalam.presentation.home
 
 import android.app.Application
 import android.util.Log
