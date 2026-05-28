@@ -1,0 +1,325 @@
+# Instincts generated from https://github.com/naruuu62/DolanNgalam
+# Generated: 2026-05-28T16:58:34.950Z
+# Version: 2.0
+# NOTE: This file supplements (does not replace) any existing curated instincts.
+# High-confidence manually curated instincts should be preserved alongside these.
+
+---
+id: DolanNgalam-commit-length
+trigger: "when writing a commit message"
+confidence: 0.6
+domain: git
+source: repo-analysis
+source_repo: https://github.com/naruuu62/DolanNgalam
+---
+
+# DolanNgalam Commit Length
+
+## Action
+
+Keep commit messages concise (~41 characters)
+
+## Evidence
+
+- Average commit message length: 41 chars
+- Based on 2 commits
+
+---
+id: DolanNgalam-naming-files
+trigger: "when creating a new file"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: https://github.com/naruuu62/DolanNgalam
+---
+
+# DolanNgalam Naming Files
+
+## Action
+
+Use PascalCase naming convention
+
+## Evidence
+
+- Analyzed file naming patterns in repository
+- Dominant pattern: PascalCase
+
+---
+id: DolanNgalam-import-relative
+trigger: "when importing modules"
+confidence: 0.75
+domain: code-style
+source: repo-analysis
+source_repo: https://github.com/naruuu62/DolanNgalam
+---
+
+# DolanNgalam Import Relative
+
+## Action
+
+Use relative imports for project files
+
+## Evidence
+
+- Import analysis shows relative import pattern
+- Example: import { x } from '../lib/x'
+
+---
+id: DolanNgalam-export-style
+trigger: "when exporting from a module"
+confidence: 0.7
+domain: code-style
+source: repo-analysis
+source_repo: https://github.com/naruuu62/DolanNgalam
+---
+
+# DolanNgalam Export Style
+
+## Action
+
+Prefer named exports
+
+## Evidence
+
+- Export pattern analysis
+- Dominant style: named
+
+---
+id: DolanNgalam-test-separate
+trigger: "when writing tests"
+confidence: 0.8
+domain: testing
+source: repo-analysis
+source_repo: https://github.com/naruuu62/DolanNgalam
+---
+
+# DolanNgalam Test Separate
+
+## Action
+
+Place tests in the tests/ or __tests__/ directory, mirroring src structure
+
+## Evidence
+
+- Separate test directory pattern detected
+- Tests live in dedicated test folders
+
+---
+id: DolanNgalam-workflow-add-or-update-viewmodel-and-ui-for-feature
+trigger: "when doing add or update viewmodel and ui for feature"
+confidence: 0.6
+domain: workflow
+source: repo-analysis
+source_repo: https://github.com/naruuu62/DolanNgalam
+---
+
+# DolanNgalam Workflow Add Or Update Viewmodel And Ui For Feature
+
+## Action
+
+Follow the add-or-update-viewmodel-and-ui-for-feature workflow:
+1. Create or update ViewModel file(s) for the feature
+2. Modify or add UI screen files to integrate the ViewModel
+3. Optionally update shared ViewModel or related files
+4. Update IDE/project configuration files (auto-generated or for consistency)
+
+## Evidence
+
+- Workflow detected from commit patterns
+- Frequency: ~2x per month
+- Files: app/src/main/java/com/example/dolanngalam/presentation/home/*ViewModel.kt, app/src/main/java/com/example/dolanngalam/presentation/home/*Screen.kt, app/src/main/java/com/example/dolanngalam/presentation/home/sharedViewModel.kt
+
+---
+id: dolanngalam-instinct-file-naming
+trigger: "When creating a new Kotlin file (class, ViewModel, or screen)"
+confidence: 0.9
+domain: code-style
+source: repo-analysis
+source_repo: naruuu62/DolanNgalam
+---
+
+# Dolanngalam Instinct File Naming
+
+## Action
+
+Name the file using PascalCase (e.g., ReviewViewModel.kt, HomeScreen.kt)
+
+## Evidence
+
+- Pattern in files: app/src/main/java/com/example/dolanngalam/presentation/home/*ViewModel.kt, *Screen.kt
+- Naming conventions specified in analysis
+
+---
+id: dolanngalam-instinct-function-naming
+trigger: "When writing a new function in Kotlin"
+confidence: 0.9
+domain: code-style
+source: repo-analysis
+source_repo: naruuu62/DolanNgalam
+---
+
+# Dolanngalam Instinct Function Naming
+
+## Action
+
+Use camelCase for function names (e.g., fetchData(), submitReview())
+
+## Evidence
+
+- Naming conventions specified in analysis
+
+---
+id: dolanngalam-instinct-class-naming
+trigger: "When defining a new class in Kotlin"
+confidence: 0.9
+domain: code-style
+source: repo-analysis
+source_repo: naruuu62/DolanNgalam
+---
+
+# Dolanngalam Instinct Class Naming
+
+## Action
+
+Use PascalCase for class names (e.g., ReviewViewModel, HomeScreen)
+
+## Evidence
+
+- Naming conventions specified in analysis
+
+---
+id: dolanngalam-instinct-constant-naming
+trigger: "When declaring a constant in Kotlin"
+confidence: 0.9
+domain: code-style
+source: repo-analysis
+source_repo: naruuu62/DolanNgalam
+---
+
+# Dolanngalam Instinct Constant Naming
+
+## Action
+
+Use SCREAMING_SNAKE_CASE for constant names (e.g., MAX_RATING)
+
+## Evidence
+
+- Naming conventions specified in analysis
+
+---
+id: dolanngalam-instinct-import-style
+trigger: "When importing modules in Kotlin files"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: naruuu62/DolanNgalam
+---
+
+# Dolanngalam Instinct Import Style
+
+## Action
+
+Use relative import paths
+
+## Evidence
+
+- Import style specified as 'relative' in analysis
+
+---
+id: dolanngalam-instinct-export-style
+trigger: "When exporting classes or functions in Kotlin"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: naruuu62/DolanNgalam
+---
+
+# Dolanngalam Instinct Export Style
+
+## Action
+
+Use named exports (declare classes/functions with explicit names)
+
+## Evidence
+
+- Export style specified as 'named' in analysis
+
+---
+id: dolanngalam-instinct-test-location
+trigger: "When adding or updating tests"
+confidence: 0.8
+domain: testing
+source: repo-analysis
+source_repo: naruuu62/DolanNgalam
+---
+
+# Dolanngalam Instinct Test Location
+
+## Action
+
+Place test files in a separate test directory, not alongside source files
+
+## Evidence
+
+- Architecture: testLocation is 'separate'
+
+---
+id: dolanngalam-instinct-test-pattern
+trigger: "When writing tests for a new feature or ViewModel"
+confidence: 0.7
+domain: testing
+source: repo-analysis
+source_repo: naruuu62/DolanNgalam
+---
+
+# Dolanngalam Instinct Test Pattern
+
+## Action
+
+Follow the structure: test class per ViewModel, using PascalCase for test class names
+
+## Evidence
+
+- Naming conventions and testLocation in architecture
+
+---
+id: dolanngalam-instinct-commit-format
+trigger: "When writing a commit message"
+confidence: 0.8
+domain: git
+source: repo-analysis
+source_repo: naruuu62/DolanNgalam
+---
+
+# Dolanngalam Instinct Commit Format
+
+## Action
+
+Use a concise, freeform message describing the change (e.g., 'View Model Review & Rating')
+
+## Evidence
+
+- Commits: freeform, no prefixes, average length 41
+- Examples: 'View Model Review & Rating', 'View Model Review & Implementasi Review dan Rating di UI'
+
+---
+id: dolanngalam-instinct-add-feature-viewmodel-ui
+trigger: "When adding or updating a feature involving both ViewModel logic and UI presentation"
+confidence: 0.9
+domain: workflow
+source: repo-analysis
+source_repo: naruuu62/DolanNgalam
+---
+
+# Dolanngalam Instinct Add Feature Viewmodel Ui
+
+## Action
+
+1. Create or update ViewModel file(s) for the feature; 2. Modify or add UI screen files to integrate the ViewModel; 3. Optionally update shared ViewModel or related files; 4. Update IDE/project configuration files if needed
+
+## Evidence
+
+- Workflow: add-or-update-viewmodel-and-ui-for-feature
+- Files: *ViewModel.kt, *Screen.kt, sharedViewModel.kt, .idea/inspectionProfiles/Project_Default.xml
+- Commit examples and sequence
+
