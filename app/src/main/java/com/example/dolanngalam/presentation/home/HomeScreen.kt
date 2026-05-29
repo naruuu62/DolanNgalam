@@ -46,6 +46,7 @@ import com.example.dolanngalam.presentation.createPlan.planViewModel
 import com.example.dolanngalam.presentation.ui_component.Navbar
 import com.example.dolanngalam.presentation.ui.theme.Blue3
 import com.example.dolanngalam.presentation.ui.theme.poppinsFont
+import planViewModel
 
 @Composable
 fun HomeScreen(
@@ -55,7 +56,7 @@ fun HomeScreen(
     onClick : (Tempat) -> Unit
 ) {
     val tempatList by viewModel.tempatList.collectAsState()
-    
+
     // Asumsi: Kita ganti tipe viewModel ke homeViewModel untuk mengakses userData
     val homeViewModel: com.example.dolanngalam.presentation.home.homeViewModel = viewModel()
     val userData by homeViewModel.userData.collectAsState()

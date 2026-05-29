@@ -19,7 +19,7 @@ class homeViewModel(application: Application) : AndroidViewModel(application) {
 
     private val _tempatPerKategori = MutableStateFlow<Map<String, List<Tempat>>>(emptyMap())
     val tempatPerKategori: StateFlow<Map<String, List<Tempat>>> get() = _tempatPerKategori
-    
+
     private val _userData = MutableStateFlow<com.example.dolanngalam.model.UserData?>(null)
     val userData: StateFlow<com.example.dolanngalam.model.UserData?> get() = _userData
 
