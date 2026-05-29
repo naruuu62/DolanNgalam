@@ -1,6 +1,5 @@
-package com.example.localngalam.presentation.home
+package com.example.dolanngalam.presentation.home
 
-import Tempat // Import yang benar
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
 import androidx.compose.foundation.clickable
@@ -39,13 +38,14 @@ import androidx.compose.ui.unit.sp
 import androidx.lifecycle.viewmodel.compose.viewModel
 import androidx.navigation.NavController
 import coil.compose.rememberAsyncImagePainter
-import com.example.localngalam.R
-import com.example.localngalam.data.local.SessionManager
-import com.example.localngalam.data.repository.ReviewRepository
-import com.example.localngalam.presentation.ui_component.Navbar
-import com.example.localngalam.presentation.ui.theme.Blue3
-import com.example.localngalam.presentation.ui.theme.poppinsFont
-import planViewModel
+import com.example.dolanngalam.R
+import com.example.dolanngalam.Tempat
+import com.example.dolanngalam.data.local.SessionManager
+import com.example.dolanngalam.data.repository.ReviewRepository
+import com.example.dolanngalam.presentation.createPlan.planViewModel
+import com.example.dolanngalam.presentation.ui_component.Navbar
+import com.example.dolanngalam.presentation.ui.theme.Blue3
+import com.example.dolanngalam.presentation.ui.theme.poppinsFont
 
 @Composable
 fun HomeScreen(
@@ -57,7 +57,7 @@ fun HomeScreen(
     val tempatList by viewModel.tempatList.collectAsState()
     
     // Asumsi: Kita ganti tipe viewModel ke homeViewModel untuk mengakses userData
-    val homeViewModel: com.example.localngalam.presentation.home.homeViewModel = viewModel()
+    val homeViewModel: com.example.dolanngalam.presentation.home.homeViewModel = viewModel()
     val userData by homeViewModel.userData.collectAsState()
     val namaPengguna = userData?.namaLengkap?.split(" ")?.firstOrNull() ?: "Pengguna"
 
